@@ -8,6 +8,7 @@ A modern web application that allows users to upload their photo and a clothing 
 tryOn/
 ├── frontend/          # React 19 + TypeScript + Vite frontend
 ├── backend/           # Rust backend server
+├── mobile/            # React Native mobile app
 └── README.md         # This file
 ```
 
@@ -15,6 +16,7 @@ tryOn/
 
 - **Modern UI**: Beautiful, responsive interface with drag-and-drop image uploads
 - **React 19**: Latest React with TypeScript for type safety
+- **React Native Mobile App**: Cross-platform mobile application
 - **Rust Backend**: High-performance Rust server with Axum framework
 - **Image Processing**: Support for multiple image formats
 - **API Integration**: Ready for Google Gemini 2.5 Flash API integration
@@ -25,6 +27,7 @@ tryOn/
 - npm or yarn
 - Rust (latest stable version)
 - Cargo
+- React Native development environment (for mobile)
 
 ## Setup Instructions
 
@@ -66,6 +69,23 @@ tryOn/
 
    The frontend will start on `http://localhost:5173`
 
+### Mobile Setup
+
+1. Navigate to the mobile directory:
+   ```bash
+   cd mobile
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the Expo development server:
+   ```bash
+   npm start
+   ```
+
 ## Usage
 
 1. Start both the backend and frontend servers
@@ -101,6 +121,14 @@ The backend is structured to integrate with Google's Gemini 2.5 Flash model. To 
 - Modern CSS with gradients and animations
 - Responsive design for mobile and desktop
 
+### Mobile Development
+
+- React Native with Expo for cross-platform development
+- TypeScript for type safety
+- React Query for state management
+- Expo Image Picker for native image selection
+- Shared architecture with web application
+
 ## API Endpoints
 
 ### Backend API
@@ -127,6 +155,13 @@ The backend is structured to integrate with Google's Gemini 2.5 Flash model. To 
 - Vite
 - Axios
 - Modern CSS
+
+### Mobile
+- React Native
+- Expo
+- TypeScript
+- React Query
+- Expo Image Picker
 
 ### Backend
 - Rust
